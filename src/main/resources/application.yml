@@ -1,0 +1,54 @@
+#ImageCode生成器配置
+ImageCode :
+    width : 120
+    height: 38
+    codeLength: 4
+    randomString : ABCDEFGHIJKLMNPQRSTUVWXYZ1234567890abcdefghijkmnpqrstuvwxyz
+    sessionKey : SESSIONCODE
+    font :
+      name : Times New Roman
+      style : 0
+      size : 18
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 8080
+  servlet:
+    context-path: /trip
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://111.231.227.97:3306/trip?useSSL=true&verifyServerCertificate=false&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+    initial-size: 10
+    max-active: 100
+    min-idle: 10
+    max-wait: 60000
+    pool-prepared-statements: true
+    max-pool-prepared-statement-per-connection-size: 20
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 300000
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+upload:
+  filepath: C:\Users\smile\Documents\picture
