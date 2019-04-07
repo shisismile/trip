@@ -29,7 +29,7 @@ spring:
       enabled: true
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://111.231.227.97:3306/trip?useSSL=true&verifyServerCertificate=false&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/trip?useSSL=true&verifyServerCertificate=false&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
     username: root
     password: 123456
     initial-size: 10
@@ -51,4 +51,4 @@ spring:
       suffix: .jsp
 
 upload:
-  filepath: C:\Users\smile\Documents\picture
+  filepath: /root/picture
