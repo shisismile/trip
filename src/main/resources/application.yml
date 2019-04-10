@@ -51,4 +51,4 @@ spring:
       suffix: .jsp
 
 upload:
-  filepath: /root/picture
+  filepath: /root/images
