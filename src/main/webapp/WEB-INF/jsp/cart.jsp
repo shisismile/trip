@@ -154,7 +154,6 @@
 </div>
 
 <!--底部-->
-<%@include file="common/foot.jsp"%>
 <div class="mask"></div>
 
 <div class="dialog">
